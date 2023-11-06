@@ -69,7 +69,7 @@ nav ul li:hover{
 
 .hero-section{
     display: flex;
-    height:150vh;
+    height:120vh;
     width: 100%;
     background-color:#f6f6f1;
 }
@@ -273,18 +273,19 @@ nav ul li:hover{
     padding: 10px 25px;
 }
 
-.free-registration{
+.free-registration {
     background: #f8f6f3;
-    height: 50px;
-    padding: 45px;
+    height: 100px;
+    padding: 40px;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+    z-index: 0;
 }
 
 .customer-review-section{
     background:#f8f6f3 ;
-    height: 130vh;
+    height: 150vh;
 }
 
 
@@ -375,4 +376,106 @@ nav ul li:hover{
     position: absolute;
     top: 200px;
     left: 25%;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.brands p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.footer-section{
+    display: flex;
+    background: #001524;
+    height: 100vh;
+}
+
+.company-info-right{
+    height: 30vh;
+}
+.logo-white{
+    padding: 50px;
+    width: 40vw;
+    margin-right: 10px;
+}
+
+.logo-white img{
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.logo-white p{
+    color: #e6e6e6;
+}
+
+.ql-da-container .quick-links-1{
+    margin-left: 120px;
+    width: 10vw;
+}
+
+.ql-da-container .quick-links-1 li{
+    list-style-type: none;
+}
+
+.ql-da-container .quick-links-1 li a{
+    color: #FFFFFFA8;
+    text-decoration: none;
+}
+
+.ql-da-container .download-app{
+    margin-left:80px ;
+    width: 30vw;
+}
+
+.sl-ql-container{
+    margin-left:100px ;
+}
+
+
+.site-links{
+    margin-right: 200px;
+}
+.sl-ql-container .site-links li, .sl-ql-container .quick-links-1 li{
+    list-style: none;
+}
+
+.mini-footer{
+    display: flex;
+    height: 50px;
+    background: #001524;
+    border-top: 0.1px solid rgb(93, 92, 92);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.sl-ql-container .site-links li a,.sl-ql-container .quick-links-1 li a{
+    text-decoration: none;
+    color: #FFFFFFA8;
+}
+
+.play-app-store img{
+    margin-top: 20px;
+    height: 30px;
+}
+
+
+.mini-footer p{
+    color: #FFFFFFA8;
+}
+
+.mini-footer .social-links li{
+    list-style: none;
+}
+
+.mini-footer .social-links li i{
+    filter: invert(1);
+    margin-right: 20px;
+    cursor: pointer;
 }
