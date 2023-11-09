@@ -41,7 +41,12 @@ nav ul li{
     color: #555;
 }
 
-nav ul li:hover{
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+}
+
+nav ul li a:hover{
     color:var(--primary-color) ;
     cursor: pointer;
 }
@@ -478,4 +483,117 @@ nav ul li:hover{
     filter: invert(1);
     margin-right: 20px;
     cursor: pointer;
+}
+
+/* Everthing css style here */
+
+.everything-container{
+    padding:70px 30px;
+    background:#d1cece38;
+}
+
+.main-left{
+    width: 25%;
+}
+
+.search-box input{
+    border: 1px solid #dddddd;
+    outline: none;
+    padding: 6px 8px;
+    color: #666;
+}
+
+
+.search-box #btn{
+    cursor: pointer;
+    margin: 0 0 0 6px;
+    overflow: hidden;
+    padding: 0.25em 0.1em;
+}
+
+.search-box #btn i{
+    text-align: center;
+    font-size: 20px;
+    padding-left:10px;
+}
+
+.filter-box{
+    margin-top: 30px;
+
+}
+
+
+.price-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 2px;
+    width: 200px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .range-slider {
+    width: 200px;
+    position: relative;
+    margin: 15px 0 30px 0;
+  }
+  
+  .range-fill {
+    height: 6px;
+    background-color: #36b37e;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    left: 0;
+}
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #36b37e;
+    cursor: pointer;
+    margin-top: -5px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: #e8e8e8;
+    border-radius: 3px;
+    border: none;
+  }
+
+
+.everthing-section-products .products-container{
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.everthing-section-products .products-container .products{
+    margin: 20px 0px;
+}
+
+.everthing-section-products .products-container .product-name{
+    color: var(--primary-color);
 }
