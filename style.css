@@ -13,11 +13,12 @@
 
 header{
     padding: 10px;
-    display: flex;
-    align-items: center;
     background-color: #fff;
-    min-height: 50px;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    height: 115px;
 }
 
 .logo{
@@ -30,6 +31,7 @@ header{
     width: 140px;
 }
 
+
 nav ul{
     display: flex;
 }
@@ -37,7 +39,6 @@ nav ul{
 nav ul li{
     list-style: none;
     margin-left:40px;
-    font-size: 16px;
     color: #555;
 }
 
@@ -46,7 +47,7 @@ nav ul li a{
     color: #555;
 }
 
-nav ul li a:hover{
+nav ul li a:hover,nav ul li a i:hover{
     color:var(--primary-color) ;
     cursor: pointer;
 }
@@ -74,7 +75,7 @@ nav ul li a:hover{
 
 .hero-section{
     display: flex;
-    height:120vh;
+    margin-bottom: 100px;
     width: 100%;
     background-color:#f6f6f1;
 }
@@ -165,8 +166,8 @@ nav ul li a:hover{
 }
 
 .products-section{
-    margin-top: 100px;
-    height: 120vh;
+    margin: 200px 0px;
+
 }
 
 .products-section h2{
@@ -216,7 +217,7 @@ nav ul li a:hover{
 
 
 .natural-products-section{
-    height: 100vh;
+    margin: 100px 0px;
     background-color:#f6f6f1;
 
 }
@@ -290,7 +291,6 @@ nav ul li a:hover{
 
 .customer-review-section{
     background:#f8f6f3 ;
-    height: 150vh;
 }
 
 
@@ -397,8 +397,8 @@ nav ul li a:hover{
 
 .footer-section{
     display: flex;
+    padding: 10px 15px;
     background: #001524;
-    height: 100vh;
 }
 
 .company-info-right{
@@ -493,10 +493,21 @@ nav ul li a:hover{
 }
 
 .main-left{
-    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right:20px;
+    border-right: 1px solid #dcdbdb;
 }
 
+.search-box{
+    display: flex;
+}
+
+
 .search-box input{
+    width: 200px;
+    height: 50px;
     border: 1px solid #dddddd;
     outline: none;
     padding: 6px 8px;
@@ -584,16 +595,75 @@ nav ul li a:hover{
     border: none;
   }
 
+  .everything-container{
+    display: flex;
+  }
+
+
+  .other-pages{
+    font-size: 20px;
+    padding: 40px 30px;
+  }
+
+  .other-pages li{
+    margin: 10px 0px;
+    list-style: none;
+  }
+
+  .other-pages li a{
+    text-decoration: none;
+    color: var(--primary-color);
+  }
 
 .everthing-section-products .products-container{
     margin-top: 50px;
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 }
 
 .everthing-section-products .products-container .products{
     margin: 20px 0px;
+    
 }
 
 .everthing-section-products .products-container .product-name{
     color: var(--primary-color);
+}
+
+.main-right{
+    padding: 0px 20px;
+}
+
+
+
+.main-right .shop p a{
+    text-decoration: none;
+    color: #777;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+.main-right .shop h2{
+    margin: 15px 0px;
+    font-size: 40px;
+}
+
+.shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.shop .products-container{
+    padding: 20px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.shop .products-container .products{
+    padding: 15px;
 }
