@@ -11,6 +11,10 @@
     --primary-color:rgb(92, 139, 38);
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header{
     padding: 10px;
     background-color: #fff;
@@ -87,18 +91,19 @@ nav ul li a:hover,nav ul li a i:hover{
 }
 
 .right-content{
-    margin-left: 20px;
+    padding-left: 200px;
+    padding-right: 40px;
     margin-top: 100px;
 }
 
 .right-content h3{
-    font-size: 1.2rem;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
 .hero-title{
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .hero-para{
@@ -227,6 +232,8 @@ nav ul li a:hover,nav ul li a i:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 30px;
+
 }
 
 .basil-leave{
@@ -401,9 +408,6 @@ nav ul li a:hover,nav ul li a i:hover{
     background: #001524;
 }
 
-.company-info-right{
-    height: 30vh;
-}
 .logo-white{
     padding: 50px;
     width: 40vw;
@@ -452,12 +456,11 @@ nav ul li a:hover,nav ul li a i:hover{
 
 .mini-footer{
     display: flex;
-    height: 50px;
     background: #001524;
     border-top: 0.1px solid rgb(93, 92, 92);
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 40px;
 }
 
 .sl-ql-container .site-links li a,.sl-ql-container .quick-links-1 li a{
@@ -666,4 +669,103 @@ nav ul li a:hover,nav ul li a i:hover{
 
 .shop .products-container .products{
     padding: 15px;
+}
+
+
+/* This is about section code below */
+
+.about{
+    text-align: center;
+    padding: 100px;
+    background: rgb(246, 246, 246);
+}
+
+.about h2{
+    color: #111111;
+    font-size: 3rem;
+}
+
+
+.favourite-section .about-basil-leave{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: -40px;
+}
+
+.favourite-store{
+    padding: 80px 20px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.left-content{
+    width: 35%;
+}
+
+.left-content h2{
+    margin: 10px 0px;
+    font-size: 3.5rem;
+}
+
+.left-content p {
+    color: #777;
+    font-weight: 300;
+}
+
+.right-image img{
+    height: 400px;
+    width: 450px;
+}
+
+/* About us result section  */
+
+.result-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background: #001524;
+    padding: 30px 0px;
+}
+
+.result-box p{
+    font-size:1.3rem;
+    text-align: center;
+}
+
+.certified-products{
+    display: flex;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}  
+
+
+.certified-products-left .review-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+}
+.certified-products-left .rating{
+    margin: 0px auto;
+}
+
+.image-slider img{
+    margin-left: 40px;
+    border-radius: 5px;
+    height:500px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.certified-products-rightmmmmm   .product-logo{
+    background-image: url(images/organic-badge-freeimg.png);
+    height: 20px;
+    width: 30px;
+    z-index: 30;
 }
