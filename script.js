@@ -1,35 +1,13 @@
-let minValue = document.getElementById("min-value");
-let maxValue = document.getElementById("max-value");
+let cart = document.querySelector(".cart")
+let rightbar = document.querySelector(".rightbar")
+let removeSidebar = document.querySelector(".hamburger")
 
-const rangeFill = document.querySelector(".range-fill");
+// Display none of the right bar when clicked
+removeSidebar.addEventListener('click',function () {
+  rightbar.style.display ='none'
+})
 
-// Function to validate range and update the fill color on slider
-function validateRange() {
-  let minPrice = parseInt(inputElements[1].value);
-  let maxPrice = parseInt(inputElements[2].value);
+cart.addEventListener('click',function () {
+  rightbar.style.display = 'inline'
+})
 
-  if (minPrice > maxPrice) {
-    let tempValue = maxPrice;
-    maxPrice = minPrice;
-    minPrice = tempValue;
-  }
-
-  const minPercentage = ((minPrice - 10) / 490) * 100;
-  const maxPercentage = ((maxPrice - 10) / 490) * 100;
-
-  rangeFill.style.left = minPercentage + "%";
-  rangeFill.style.width = maxPercentage - minPercentage + "%";
-
-  minValue.innerHTML = "$" + minPrice;
-  maxValue.innerHTML = "$" + maxPrice;
-}
-
-const inputElements = document.querySelectorAll("input");
-
-// Add an event listener to each input element
-inputElements.forEach((element) => {
-  element.addEventListener("input", validateRange);
-});
-
-// Initial call to validateRange
-validateRange();
